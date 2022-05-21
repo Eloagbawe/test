@@ -16,8 +16,6 @@ int _printf(const char *const format, ...)
     n = 0;
     while (format && format[i])
     {
-        // if (format[i] == '%')
-        // {
         if ((format[i] == '%') && (check_valid_identifier(format[i + 1]) != 0))
         {
             n += get_identifier_func(ap, format[i + 1]);
@@ -28,10 +26,6 @@ int _printf(const char *const format, ...)
             n += get_flags_func(ap, format[i + 1], format[i + 2]);
             i += 2;
         }
-        // else {
-        //     _putchar('\0');
-        // }
-        //}
         else
         {
             _putchar(format[i]);
