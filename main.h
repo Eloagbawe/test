@@ -12,24 +12,15 @@ int print_string(va_list a);
 int print_percent();
 int print_number(int a, int base);
 int print_decimal(va_list a);
-
 int print_binary(va_list a);
-
 int print_integer(va_list a);
-
 int print_unsigned_number(int a, int base);
 int print_unsigned_int(va_list a);
-
 int print_unsigned_octal(va_list a);
-
 int print_hexadecimal(int a, char alph[]);
 int print_lowercase_hexadecimal(va_list a);
-
 int print_uppercase_hexadecimal(va_list a);
-
 int print_conv_specifier(va_list a);
-
-int print_address(va_list a);
 int check_valid_flag(char s, char next);
 int get_flags_func(va_list a, char s, char next);
 int handle_plus(va_list a);
