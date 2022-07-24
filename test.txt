@@ -1,0 +1,4 @@
+>>> add = __import__('tdd2').add
+>>> add(2,3)
+5
+
